@@ -1,0 +1,744 @@
+{
+  "provenance": "Earlier local tools/list observations in the same conversation; not a new server call in this source-analysis step. Names and top-level schema field names only; no authentication data.",
+  "projects": {
+    "postiz": {
+      "count": 20,
+      "tools": [
+        {
+          "name": "integrationList",
+          "input_fields": [
+            "group"
+          ]
+        },
+        {
+          "name": "groupList",
+          "input_fields": []
+        },
+        {
+          "name": "integrationSchema",
+          "input_fields": [
+            "isPremium",
+            "platform"
+          ]
+        },
+        {
+          "name": "triggerTool",
+          "input_fields": [
+            "integrationId",
+            "methodName",
+            "dataSchema"
+          ]
+        },
+        {
+          "name": "integrationSchedulePostTool",
+          "input_fields": [
+            "socialPost"
+          ]
+        },
+        {
+          "name": "postsListTool",
+          "input_fields": [
+            "startDate",
+            "endDate",
+            "customer"
+          ]
+        },
+        {
+          "name": "postSettingsTool",
+          "input_fields": [
+            "id",
+            "settings"
+          ]
+        },
+        {
+          "name": "deletePostTool",
+          "input_fields": [
+            "id"
+          ]
+        },
+        {
+          "name": "generateVideoOptions",
+          "input_fields": [
+            "reasoning"
+          ]
+        },
+        {
+          "name": "videoFunctionTool",
+          "input_fields": [
+            "identifier",
+            "functionName"
+          ]
+        },
+        {
+          "name": "generateVideoTool",
+          "input_fields": [
+            "identifier",
+            "output",
+            "customParams"
+          ]
+        },
+        {
+          "name": "videoStatusTool",
+          "input_fields": [
+            "jobId"
+          ]
+        },
+        {
+          "name": "generateImageTool",
+          "input_fields": [
+            "prompt"
+          ]
+        },
+        {
+          "name": "uploadFromUrlTool",
+          "input_fields": [
+            "url",
+            "adjust"
+          ]
+        },
+        {
+          "name": "mediaListTool",
+          "input_fields": [
+            "search",
+            "page"
+          ]
+        },
+        {
+          "name": "mediaStatusTool",
+          "input_fields": [
+            "id"
+          ]
+        },
+        {
+          "name": "uploadWidgetTool",
+          "input_fields": []
+        },
+        {
+          "name": "uploadWidgetTicketTool",
+          "input_fields": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "uploadWidgetStatusTool",
+          "input_fields": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "ask_postiz",
+          "input_fields": [
+            "message"
+          ]
+        }
+      ]
+    },
+    "trypost": {
+      "count": 83,
+      "tools": [
+        {
+          "name": "list-posts-tool",
+          "input_fields": [
+            "status",
+            "search",
+            "channels",
+            "labels",
+            "untagged",
+            "page"
+          ]
+        },
+        {
+          "name": "get-post-tool",
+          "input_fields": [
+            "post_id"
+          ]
+        },
+        {
+          "name": "create-post-tool",
+          "input_fields": [
+            "content",
+            "media",
+            "status",
+            "scheduled_at",
+            "queue",
+            "queue_slot",
+            "label_ids",
+            "social_account_id",
+            "content_type",
+            "meta"
+          ]
+        },
+        {
+          "name": "create-posts-tool",
+          "input_fields": [
+            "status",
+            "content",
+            "media",
+            "scheduled_at",
+            "queue",
+            "label_ids",
+            "destinations"
+          ]
+        },
+        {
+          "name": "update-post-tool",
+          "input_fields": [
+            "post_id",
+            "content",
+            "media",
+            "scheduled_at",
+            "queue",
+            "status",
+            "label_ids",
+            "content_type",
+            "meta"
+          ]
+        },
+        {
+          "name": "publish-post-tool",
+          "input_fields": [
+            "post_id",
+            "queue",
+            "scheduled_at"
+          ]
+        },
+        {
+          "name": "approve-post-tool",
+          "input_fields": [
+            "post_id",
+            "scheduled_at",
+            "publish_now"
+          ]
+        },
+        {
+          "name": "reject-post-tool",
+          "input_fields": [
+            "post_id"
+          ]
+        },
+        {
+          "name": "preview-post-tool",
+          "input_fields": [
+            "post_id"
+          ]
+        },
+        {
+          "name": "delete-post-tool",
+          "input_fields": [
+            "post_id"
+          ]
+        },
+        {
+          "name": "attach-media-from-url-tool",
+          "input_fields": [
+            "post_id",
+            "urls"
+          ]
+        },
+        {
+          "name": "request-media-upload-tool",
+          "input_fields": []
+        },
+        {
+          "name": "attach-media-from-upload-tool",
+          "input_fields": [
+            "post_id",
+            "upload_token",
+            "alt",
+            "meta"
+          ]
+        },
+        {
+          "name": "get-post-metrics-tool",
+          "input_fields": [
+            "post_id"
+          ]
+        },
+        {
+          "name": "list-post-notes-tool",
+          "input_fields": [
+            "post_id",
+            "page"
+          ]
+        },
+        {
+          "name": "create-post-note-tool",
+          "input_fields": [
+            "post_id",
+            "body"
+          ]
+        },
+        {
+          "name": "update-post-note-tool",
+          "input_fields": [
+            "post_id",
+            "note_id",
+            "body"
+          ]
+        },
+        {
+          "name": "delete-post-note-tool",
+          "input_fields": [
+            "post_id",
+            "note_id"
+          ]
+        },
+        {
+          "name": "get-analytics-report-tool",
+          "input_fields": [
+            "range",
+            "start",
+            "end",
+            "channels"
+          ]
+        },
+        {
+          "name": "get-analytics-publication-tool",
+          "input_fields": [
+            "publication_id"
+          ]
+        },
+        {
+          "name": "get-channel-insights-tool",
+          "input_fields": [
+            "account_id",
+            "range",
+            "start",
+            "end",
+            "period",
+            "sort",
+            "labels",
+            "untagged",
+            "types"
+          ]
+        },
+        {
+          "name": "list-channel-publications-tool",
+          "input_fields": [
+            "account_id",
+            "range",
+            "start",
+            "end",
+            "period",
+            "sort",
+            "labels",
+            "untagged",
+            "types",
+            "page"
+          ]
+        },
+        {
+          "name": "list-content-types-tool",
+          "input_fields": []
+        },
+        {
+          "name": "list-signatures-tool",
+          "input_fields": [
+            "page"
+          ]
+        },
+        {
+          "name": "create-signature-tool",
+          "input_fields": [
+            "name",
+            "content"
+          ]
+        },
+        {
+          "name": "update-signature-tool",
+          "input_fields": [
+            "signature_id",
+            "name",
+            "content"
+          ]
+        },
+        {
+          "name": "delete-signature-tool",
+          "input_fields": [
+            "signature_id"
+          ]
+        },
+        {
+          "name": "list-ideas-tool",
+          "input_fields": [
+            "stages",
+            "unassigned",
+            "labels",
+            "untagged",
+            "page"
+          ]
+        },
+        {
+          "name": "get-idea-tool",
+          "input_fields": [
+            "idea_id"
+          ]
+        },
+        {
+          "name": "create-idea-tool",
+          "input_fields": [
+            "title",
+            "body",
+            "idea_stage_id",
+            "media_ids",
+            "label_ids"
+          ]
+        },
+        {
+          "name": "update-idea-tool",
+          "input_fields": [
+            "idea_id",
+            "title",
+            "body",
+            "idea_stage_id",
+            "media_ids",
+            "label_ids"
+          ]
+        },
+        {
+          "name": "delete-ideas-tool",
+          "input_fields": [
+            "idea_ids"
+          ]
+        },
+        {
+          "name": "duplicate-idea-tool",
+          "input_fields": [
+            "idea_id"
+          ]
+        },
+        {
+          "name": "move-ideas-tool",
+          "input_fields": [
+            "idea_id",
+            "idea_stage_id",
+            "idea_ids"
+          ]
+        },
+        {
+          "name": "list-idea-stages-tool",
+          "input_fields": []
+        },
+        {
+          "name": "create-idea-stage-tool",
+          "input_fields": [
+            "name"
+          ]
+        },
+        {
+          "name": "update-idea-stage-tool",
+          "input_fields": [
+            "idea_stage_id",
+            "name"
+          ]
+        },
+        {
+          "name": "delete-idea-stage-tool",
+          "input_fields": [
+            "idea_stage_id"
+          ]
+        },
+        {
+          "name": "reorder-idea-stages-tool",
+          "input_fields": [
+            "stage_ids"
+          ]
+        },
+        {
+          "name": "list-labels-tool",
+          "input_fields": [
+            "page"
+          ]
+        },
+        {
+          "name": "create-label-tool",
+          "input_fields": [
+            "name",
+            "color"
+          ]
+        },
+        {
+          "name": "update-label-tool",
+          "input_fields": [
+            "label_id",
+            "name",
+            "color"
+          ]
+        },
+        {
+          "name": "delete-label-tool",
+          "input_fields": [
+            "label_id"
+          ]
+        },
+        {
+          "name": "list-social-accounts-tool",
+          "input_fields": [
+            "page"
+          ]
+        },
+        {
+          "name": "get-posting-schedule-tool",
+          "input_fields": [
+            "account_id"
+          ]
+        },
+        {
+          "name": "update-posting-schedule-tool",
+          "input_fields": [
+            "account_id",
+            "timezone",
+            "posting_goal",
+            "posting_schedule"
+          ]
+        },
+        {
+          "name": "generate-posting-schedule-tool",
+          "input_fields": [
+            "account_id",
+            "mode",
+            "goal"
+          ]
+        },
+        {
+          "name": "copy-posting-schedule-tool",
+          "input_fields": [
+            "account_id",
+            "from"
+          ]
+        },
+        {
+          "name": "list-free-slots-tool",
+          "input_fields": [
+            "account_id"
+          ]
+        },
+        {
+          "name": "reorder-queue-tool",
+          "input_fields": [
+            "account_id",
+            "post_ids"
+          ]
+        },
+        {
+          "name": "move-post-to-slot-tool",
+          "input_fields": [
+            "account_id",
+            "post_id",
+            "slot_at"
+          ]
+        },
+        {
+          "name": "set-post-recurrence-tool",
+          "input_fields": [
+            "post_id",
+            "interval",
+            "frequency",
+            "times"
+          ]
+        },
+        {
+          "name": "clear-post-recurrence-tool",
+          "input_fields": [
+            "post_id"
+          ]
+        },
+        {
+          "name": "list-pinterest-boards-tool",
+          "input_fields": [
+            "account_id"
+          ]
+        },
+        {
+          "name": "create-pinterest-board-tool",
+          "input_fields": [
+            "account_id",
+            "name"
+          ]
+        },
+        {
+          "name": "list-discord-channels-tool",
+          "input_fields": [
+            "account_id"
+          ]
+        },
+        {
+          "name": "search-instagram-audio-tool",
+          "input_fields": [
+            "account_id",
+            "q",
+            "type"
+          ]
+        },
+        {
+          "name": "get-instagram-audio-tool",
+          "input_fields": [
+            "account_id",
+            "audio_id"
+          ]
+        },
+        {
+          "name": "get-tiktok-creator-info-tool",
+          "input_fields": [
+            "account_id"
+          ]
+        },
+        {
+          "name": "list-repurposes-tool",
+          "input_fields": [
+            "page"
+          ]
+        },
+        {
+          "name": "create-repurpose-tool",
+          "input_fields": [
+            "source_social_account_id",
+            "source_format",
+            "publish_mode",
+            "destinations"
+          ]
+        },
+        {
+          "name": "get-repurpose-tool",
+          "input_fields": [
+            "repurpose_id"
+          ]
+        },
+        {
+          "name": "update-repurpose-tool",
+          "input_fields": [
+            "repurpose_id",
+            "source_social_account_id",
+            "source_format",
+            "publish_mode",
+            "destinations"
+          ]
+        },
+        {
+          "name": "activate-repurpose-tool",
+          "input_fields": [
+            "repurpose_id"
+          ]
+        },
+        {
+          "name": "pause-repurpose-tool",
+          "input_fields": [
+            "repurpose_id"
+          ]
+        },
+        {
+          "name": "resume-repurpose-tool",
+          "input_fields": [
+            "repurpose_id"
+          ]
+        },
+        {
+          "name": "disable-repurpose-tool",
+          "input_fields": [
+            "repurpose_id"
+          ]
+        },
+        {
+          "name": "list-repurpose-items-tool",
+          "input_fields": [
+            "repurpose_id",
+            "page"
+          ]
+        },
+        {
+          "name": "list-repurpose-source-formats-tool",
+          "input_fields": []
+        },
+        {
+          "name": "delete-repurpose-tool",
+          "input_fields": [
+            "repurpose_id"
+          ]
+        },
+        {
+          "name": "list-webhooks-tool",
+          "input_fields": [
+            "page"
+          ]
+        },
+        {
+          "name": "get-webhook-tool",
+          "input_fields": [
+            "webhook_id"
+          ]
+        },
+        {
+          "name": "create-webhook-tool",
+          "input_fields": [
+            "endpoint",
+            "events"
+          ]
+        },
+        {
+          "name": "update-webhook-tool",
+          "input_fields": [
+            "webhook_id",
+            "endpoint",
+            "events",
+            "status"
+          ]
+        },
+        {
+          "name": "delete-webhook-tool",
+          "input_fields": [
+            "webhook_id"
+          ]
+        },
+        {
+          "name": "send-webhook-test-tool",
+          "input_fields": [
+            "webhook_id"
+          ]
+        },
+        {
+          "name": "rotate-webhook-secret-tool",
+          "input_fields": [
+            "webhook_id"
+          ]
+        },
+        {
+          "name": "list-webhook-logs-tool",
+          "input_fields": [
+            "webhook_id",
+            "page"
+          ]
+        },
+        {
+          "name": "replay-webhook-log-tool",
+          "input_fields": [
+            "webhook_id",
+            "log_id"
+          ]
+        },
+        {
+          "name": "get-workspace-tool",
+          "input_fields": []
+        },
+        {
+          "name": "list-api-keys-tool",
+          "input_fields": [
+            "page"
+          ]
+        },
+        {
+          "name": "create-api-key-tool",
+          "input_fields": [
+            "name",
+            "expires_at"
+          ]
+        },
+        {
+          "name": "delete-api-key-tool",
+          "input_fields": [
+            "api_key_id"
+          ]
+        }
+      ]
+    }
+  }
+}

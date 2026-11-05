@@ -1,0 +1,861 @@
+{
+  "analysis_date": "2026-11-04",
+  "timezone": "Asia/Seoul",
+  "scope": "fixed release source analysis; doc catalog classified; 39 core document bodies collected and relevant sections reviewed; earlier local observations reused; no live SNS or LLM execution in this analysis",
+  "revisions": {
+    "postiz": {
+      "repository": "gitroomhq/postiz-app",
+      "tag": "v2.25.3",
+      "commit": "a5affe62c74e39c1e7ac960d50d8418b807d532c",
+      "commit_date": "2026-10-24T13:27:20Z",
+      "url": "https://github.com/gitroomhq/postiz-app/commit/a5affe62c74e39c1e7ac960d50d8418b807d532c"
+    },
+    "trypost": {
+      "repository": "trypostit/trypost",
+      "tag": "v2.0.1",
+      "commit": "b13cca4d834bc793ef895dba40f29ed050ec820d",
+      "commit_date": "2026-11-01T15:34:44Z",
+      "url": "https://github.com/trypostit/trypost/commit/b13cca4d834bc793ef895dba40f29ed050ec820d"
+    }
+  },
+  "images": {
+    "postiz": {
+      "digest": "sha256:1e376ff2cb781022d528f171719cf174cf693a985a30cb40eefb13eae3ddda13",
+      "oci_revision_verified": false
+    },
+    "trypost": {
+      "digest": "sha256:6e6a7bf25edbe0264a8f8b97a0b90f8c51530f225e13783c86940d0462ca29e8",
+      "oci_revision": "b13cca4d834bc793ef895dba40f29ed050ec820d"
+    }
+  },
+  "documentation_index_counts": {
+    "postiz": 177,
+    "trypost": 166
+  },
+  "document_bodies": [
+    {
+      "project": "postiz",
+      "title": "How it works",
+      "url": "https://docs.postiz.com/self-host/architecture.md",
+      "description": "Learn the architecture of the project",
+      "status": "readable",
+      "bytes": 3201,
+      "sha256": "1437231621c936116117924dc2d437294872715eb7797fa1fcf9990f3c839ea5"
+    },
+    {
+      "project": "postiz",
+      "title": "Development Environment",
+      "url": "https://docs.postiz.com/self-host/installation/development.md",
+      "description": "Set up Postiz for local development",
+      "status": "readable",
+      "bytes": 7029,
+      "sha256": "48f8ce60ea7b09e871266a60728ed2fe1254ded38c3f71ddbbe2defaee39e42f"
+    },
+    {
+      "project": "postiz",
+      "title": "Migration to Temporal",
+      "url": "https://docs.postiz.com/self-host/installation/migration.md",
+      "description": "A guide to migrating to the new Temporal infrastructure",
+      "status": "readable",
+      "bytes": 1581,
+      "sha256": "e05e66139126217cf60234fda294bb6aac84f82e936ca3abe2d472f2fc309978"
+    },
+    {
+      "project": "postiz",
+      "title": "Configuration Reference",
+      "url": "https://docs.postiz.com/self-host/configuration/reference.md",
+      "description": "Environment variables reference for Postiz",
+      "status": "readable",
+      "bytes": 18335,
+      "sha256": "289f18c4e925cc391cd40c3d3bc58add16e02132295b970f927feb3d2764083b"
+    },
+    {
+      "project": "postiz",
+      "title": "Image and video editing (Polotno)",
+      "url": "https://docs.postiz.com/self-host/configuration/polotno.md",
+      "description": "Enable the in-app design editor on a self-hosted instance",
+      "status": "readable",
+      "bytes": 2517,
+      "sha256": "512f88f5521171c0724ce47efc24ecabcf9fd5806df94d1c2a971efe054b13e9"
+    },
+    {
+      "project": "postiz",
+      "title": "Uploads & Storage",
+      "url": "https://docs.postiz.com/self-host/configuration/uploads.md",
+      "description": "Local filesystem vs Cloudflare R2 for media uploads",
+      "status": "readable",
+      "bytes": 3080,
+      "sha256": "dd50ed9a2cd9d0e00a5efea6fabfcc6d24def4ffb9a4b433f700b09020c745c4"
+    },
+    {
+      "project": "postiz",
+      "title": "Self-Host Gotchas",
+      "url": "https://docs.postiz.com/self-host/troubleshooting.md",
+      "description": "Common problems specific to running Postiz yourself",
+      "status": "readable",
+      "bytes": 7269,
+      "sha256": "89449add3d44691a3d2be8f77021c2cec772843e674a152ba25e33676a977492"
+    },
+    {
+      "project": "postiz",
+      "title": "Developer Guide",
+      "url": "https://docs.postiz.com/contributing/developer-guide.md",
+      "description": "How to get started developing with Postiz",
+      "status": "readable",
+      "bytes": 2602,
+      "sha256": "fa3f8f1ee922d8af769298465a2b6f388149560a075d6a725b1a79a8f91c8d19"
+    },
+    {
+      "project": "postiz",
+      "title": "How to add a new provider",
+      "url": "https://docs.postiz.com/contributing/create-provider.md",
+      "description": "How to add a new provider to Postiz",
+      "status": "readable",
+      "bytes": 4788,
+      "sha256": "67733a5e0216f7892a499d923659578e6c51626c84467ffb66d8ebda8c8adbc3"
+    },
+    {
+      "project": "postiz",
+      "title": "Sharing a post for approval",
+      "url": "https://docs.postiz.com/general/approvals.md",
+      "description": "Send a client a preview link and collect their comments",
+      "status": "readable",
+      "bytes": 2024,
+      "sha256": "6e9f01637c7ac0f427f8a46ccf78d79cd58fd67cfd3feb72f232a77fd2cb09e6"
+    },
+    {
+      "project": "postiz",
+      "title": "The AI agent",
+      "url": "https://docs.postiz.com/general/agents.md",
+      "description": "Chat your way to a scheduled post",
+      "status": "readable",
+      "bytes": 2467,
+      "sha256": "3dfc5d6fede426ee55e0637ddf615ab90e8b52f20370a936a39e8e8d151fff79"
+    },
+    {
+      "project": "postiz",
+      "title": "Analytics",
+      "url": "https://docs.postiz.com/general/analytics.md",
+      "description": "Which platforms report metrics, what they report, and over what period",
+      "status": "readable",
+      "bytes": 4332,
+      "sha256": "b51830f87f45758a899227b75a4c79f657d2f2186beb8e030623c6f3bcbea75e"
+    },
+    {
+      "project": "postiz",
+      "title": "Plugs",
+      "url": "https://docs.postiz.com/general/automations/plugs.md",
+      "description": "Auto-repost and auto-comment when a post performs well",
+      "status": "readable",
+      "bytes": 2778,
+      "sha256": "f22afda19819ceed9957461caf9c4848afdf061ae79067a43ad863aa215dca44"
+    },
+    {
+      "project": "postiz",
+      "title": "RSS auto-posting",
+      "url": "https://docs.postiz.com/general/automations/auto-post-rss.md",
+      "description": "Turn a feed into scheduled posts, with or without AI rewriting",
+      "status": "readable",
+      "bytes": 2924,
+      "sha256": "638b473dae15c6206fdc0d71b359825a202f78ed0772e9a896cc711a9d8e0781"
+    },
+    {
+      "project": "postiz",
+      "title": "Team members",
+      "url": "https://docs.postiz.com/general/settings/team.md",
+      "description": "Invite people into your organisation and set what they can do",
+      "status": "readable",
+      "bytes": 2166,
+      "sha256": "4264cdc97ed09e28561e8568ff2f0a92959e65a0644e6a282b4546b880a1a73d"
+    },
+    {
+      "project": "postiz",
+      "title": "Scheduling and publishing",
+      "url": "https://docs.postiz.com/general/composer/scheduling.md",
+      "description": "Draft, schedule, post now, and repeat a post on a cycle",
+      "status": "readable",
+      "bytes": 3228,
+      "sha256": "df0d5a6e67e16d1f9c4e1b01896117d574e0325de522d579a6c24890cd778d7a"
+    },
+    {
+      "project": "postiz",
+      "title": "Threads and comments",
+      "url": "https://docs.postiz.com/general/composer/threads-and-comments.md",
+      "description": "Multi-part posts, what each platform does with them, and delays between parts",
+      "status": "readable",
+      "bytes": 2806,
+      "sha256": "cdccbe3376d4b24b4fb114e43d5bbcd6726a55249bc32ca8bd49abeab9293f1a"
+    },
+    {
+      "project": "postiz",
+      "title": "API Overview",
+      "url": "https://docs.postiz.com/public-api/introduction.md",
+      "description": "Getting started with the Postiz Public API",
+      "status": "readable",
+      "bytes": 10648,
+      "sha256": "e4b6c32c951fffbdda9d55d9e663074f961cb71079356d7090d8b375db080a5e"
+    },
+    {
+      "project": "postiz",
+      "title": "Create Post",
+      "url": "https://docs.postiz.com/public-api/posts/create.md",
+      "description": "Create or schedule a new post. Each social media platform has its own settings schema.",
+      "status": "readable",
+      "bytes": 50675,
+      "sha256": "080f53f9beed0b0fdd1b93435fadcd292f02fbcd6bae9def16c7561dac21e255"
+    },
+    {
+      "project": "postiz",
+      "title": "Threads",
+      "url": "https://docs.postiz.com/self-host/providers/threads.md",
+      "description": "How to add Threads to your system",
+      "status": "readable",
+      "bytes": 6535,
+      "sha256": "d549f6b661f923756781078b419fd46b23961c985f6e93b16fb2e2ce620e958c"
+    },
+    {
+      "project": "trypost",
+      "title": "Self-Hosting",
+      "url": "https://docs.trypost.it/self-hosting/overview.md",
+      "description": "Deploy TryPost on your own infrastructure",
+      "status": "readable",
+      "bytes": 2677,
+      "sha256": "04ab92e0833ce6110dd42e5222b134dc8876713b4f617b0c833c3e2481b1572e"
+    },
+    {
+      "project": "trypost",
+      "title": "Docker",
+      "url": "https://docs.trypost.it/self-hosting/docker.md",
+      "description": "Run TryPost with Docker Compose",
+      "status": "readable",
+      "bytes": 13549,
+      "sha256": "3cd88744da821ea83f10d098412edc51d8d4828c1ac5bd8c292234f3e892a719"
+    },
+    {
+      "project": "trypost",
+      "title": "Configuration",
+      "url": "https://docs.trypost.it/self-hosting/configuration.md",
+      "description": "Configure TryPost environment variables",
+      "status": "readable",
+      "bytes": 40784,
+      "sha256": "e104fb449dbc2f7ce966cdff346f724926092ae0ebcaa3668c873d97fbe39c2f"
+    },
+    {
+      "project": "trypost",
+      "title": "Production Setup",
+      "url": "https://docs.trypost.it/self-hosting/production.md",
+      "description": "Deploy TryPost to a production environment",
+      "status": "readable",
+      "bytes": 13618,
+      "sha256": "957a2d98baeba2d9c561b75da99e4fb06ff6311f8645d9cc8341ec6e82812a3e"
+    },
+    {
+      "project": "trypost",
+      "title": "Upgrading",
+      "url": "https://docs.trypost.it/self-hosting/upgrading.md",
+      "description": "What to check before pulling a new version of TryPost",
+      "status": "readable",
+      "bytes": 1643,
+      "sha256": "536ca680b206190f2365881d6ebd7a1b539eb96aef3c043db9e413e93e73761b"
+    },
+    {
+      "project": "trypost",
+      "title": "AI Providers",
+      "url": "https://docs.trypost.it/self-hosting/ai.md",
+      "description": "Configure the AI text provider for self-hosted TryPost",
+      "status": "readable",
+      "bytes": 5000,
+      "sha256": "e1e4908c61f0f848c17c353966dbe8ffa35270e857d6fbc9cbeefea4a5b7bd8b"
+    },
+    {
+      "project": "trypost",
+      "title": "Introduction",
+      "url": "https://docs.trypost.it/ai/introduction.md",
+      "description": "Connect AI coding assistants to your TryPost account using the Model Context Protocol",
+      "status": "readable",
+      "bytes": 9873,
+      "sha256": "96713e4fa5be35a456130f15bcba51d634769e5a3b64cf4036e3d40dc23996f3"
+    },
+    {
+      "project": "trypost",
+      "title": "Tools reference",
+      "url": "https://docs.trypost.it/ai/tools-reference.md",
+      "description": "Every tool the TryPost MCP server exposes, with its arguments, who can call it and its REST equivalent",
+      "status": "readable",
+      "bytes": 42291,
+      "sha256": "cd6bb46357412932f56c58b30b61c4a6884ea597c4ef02f8cdedbe957915863b"
+    },
+    {
+      "project": "trypost",
+      "title": "Members and permissions",
+      "url": "https://docs.trypost.it/knowledge-base/settings/members-and-permissions.md",
+      "description": "Invite teammates to a workspace, make them admins, and decide whose posts need approval.",
+      "status": "readable",
+      "bytes": 4591,
+      "sha256": "1e36731207e0aedceddd2b6c0fc004cfb30196591a4fb77a42aeb7ad777395d3"
+    },
+    {
+      "project": "trypost",
+      "title": "Approvals",
+      "url": "https://docs.trypost.it/knowledge-base/publish/approvals.md",
+      "description": "Review and approve posts from members whose posts need approval.",
+      "status": "readable",
+      "bytes": 4534,
+      "sha256": "b98cdb1526f3217dd75ce41effc3d4d2b348e06a463fd99fe4459bf158520535"
+    },
+    {
+      "project": "trypost",
+      "title": "Repurpose",
+      "url": "https://docs.trypost.it/knowledge-base/repurpose.md",
+      "description": "Watch an Instagram or Facebook account and republish every new video to your other networks.",
+      "status": "readable",
+      "bytes": 8218,
+      "sha256": "f11fc641a5e0df65bbe513b5352a7e231c0f47e199b210dfa53f11b4103b8262"
+    },
+    {
+      "project": "trypost",
+      "title": "Ideas",
+      "url": "https://docs.trypost.it/knowledge-base/create/ideas.md",
+      "description": "Collect, organize and develop post ideas on a board before they become posts.",
+      "status": "readable",
+      "bytes": 4628,
+      "sha256": "29df1cc85b0b2ac030beee922ec835a343386e97cb1412fd88f1758d68b19713"
+    },
+    {
+      "project": "trypost",
+      "title": "Feeds",
+      "url": "https://docs.trypost.it/knowledge-base/create/feeds.md",
+      "description": "Follow RSS, Atom and JSON feeds and turn articles into posts or ideas.",
+      "status": "readable",
+      "bytes": 3004,
+      "sha256": "ab5e751121ab5996a8eed897a5a3f67ce5d6a67e6d69a0c5104c87808c6607aa"
+    },
+    {
+      "project": "trypost",
+      "title": "Templates",
+      "url": "https://docs.trypost.it/knowledge-base/create/templates.md",
+      "description": "Reusable post texts: TryPost's library plus your team's and your own.",
+      "status": "readable",
+      "bytes": 2703,
+      "sha256": "af410ea4051a7da9a0e0e2f0cf60031164045c7a597078c1d99852dfcd3f9833"
+    },
+    {
+      "project": "trypost",
+      "title": "Composer",
+      "url": "https://docs.trypost.it/knowledge-base/publish/composer.md",
+      "description": "Write a post once, customize it for each network and choose when it publishes.",
+      "status": "readable",
+      "bytes": 11715,
+      "sha256": "5376be6bc4add945a9110e6336e9b47a33e4920e6f29a9c0520b2011db1ddb4d"
+    },
+    {
+      "project": "trypost",
+      "title": "Introduction",
+      "url": "https://docs.trypost.it/api-reference/introduction.md",
+      "description": "Authenticate with a workspace API key and call the TryPost REST API: base URL, permissions, errors, pagination and rate limits.",
+      "status": "readable",
+      "bytes": 10592,
+      "sha256": "be78f1585861082e7ea4ed39b4074fb3ab085cfcc32496a11496f664d0874503"
+    },
+    {
+      "project": "trypost",
+      "title": "Posting",
+      "url": "https://docs.trypost.it/api-reference/guides/posting.md",
+      "description": "Create, schedule and publish posts through the API: destinations, per-network settings, scheduling modes, thread replies and content limits.",
+      "status": "readable",
+      "bytes": 15794,
+      "sha256": "dc890295719c6dd119961ca0af8bd37070d8cac231a4b5804a6f00253138349e"
+    },
+    {
+      "project": "trypost",
+      "title": "Media uploads",
+      "url": "https://docs.trypost.it/api-reference/guides/media-uploads.md",
+      "description": "Attach images, videos and PDFs to posts through the API: upload a file, attach from a URL, or reuse media from another post.",
+      "status": "readable",
+      "bytes": 9808,
+      "sha256": "7972417dcd9baebef9cafc44acb289e40e570219268201b47c30be2bdc62ab76"
+    },
+    {
+      "project": "trypost",
+      "title": "Threads",
+      "url": "https://docs.trypost.it/platforms/threads.md",
+      "description": "Connect your Threads account to TryPost",
+      "status": "readable",
+      "bytes": 2894,
+      "sha256": "30a439a1453b55505ea48c0d34518b21b27901c08c3229dd23998f550e8c6f8f"
+    }
+  ],
+  "source_files": [
+    {
+      "id": "P01",
+      "project": "postiz",
+      "path": "package.json",
+      "description": "프로젝트 의존성과 실행 스크립트",
+      "sha256": "05a654eeb329685de5dc5f5a575e70778b57eb604bf3525000c40c91f11ad092",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/package.json"
+    },
+    {
+      "id": "P02",
+      "project": "postiz",
+      "path": "libraries/nestjs-libraries/src/database/prisma/schema.prisma",
+      "description": "데이터 모델과 상태",
+      "sha256": "fc4f5ca720425c3b071a1f46030713d9af8729b4472aba9f77d1684b40df772d",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/libraries/nestjs-libraries/src/database/prisma/schema.prisma"
+    },
+    {
+      "id": "P03",
+      "project": "postiz",
+      "path": "apps/backend/src/main.ts",
+      "description": "HTTP 서버 진입점",
+      "sha256": "b1af24e3193e02c5919219225351d57db67b7a36ade2fcc067e0c04653af923a",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/apps/backend/src/main.ts"
+    },
+    {
+      "id": "P04",
+      "project": "postiz",
+      "path": "apps/orchestrator/src/app.module.ts",
+      "description": "비동기 작업 구성",
+      "sha256": "bb69485a56ac22d9ea9e93f593d0f8b0c3252829a4e22c84fea964e37f0a18e9",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/apps/orchestrator/src/app.module.ts"
+    },
+    {
+      "id": "P05",
+      "project": "postiz",
+      "path": "libraries/nestjs-libraries/src/temporal/temporal.module.ts",
+      "description": "Temporal worker와 큐",
+      "sha256": "4dc10cc8fce99dede90cbb4c1ee883ee1c0f85d99f7257d7a86facd93e9360d5",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/libraries/nestjs-libraries/src/temporal/temporal.module.ts"
+    },
+    {
+      "id": "P06",
+      "project": "postiz",
+      "path": "apps/orchestrator/src/workflows/post-workflows/post.workflow.v1.1.2.ts",
+      "description": "발행 워크플로",
+      "sha256": "7047cf4c339320d56fea1d840769c75f86421e5276300896d7c35db59fd027a6",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/apps/orchestrator/src/workflows/post-workflows/post.workflow.v1.1.2.ts"
+    },
+    {
+      "id": "P07",
+      "project": "postiz",
+      "path": "libraries/nestjs-libraries/src/database/prisma/posts/posts.service.ts",
+      "description": "게시물 생성·수정·분석 서비스",
+      "sha256": "7b1412ac39f0dc8fa6e8fee50f231010c468a3574a7cc361b2fe033e58ab0ad7",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/libraries/nestjs-libraries/src/database/prisma/posts/posts.service.ts"
+    },
+    {
+      "id": "P08",
+      "project": "postiz",
+      "path": "libraries/nestjs-libraries/src/chat/load.tools.service.ts",
+      "description": "Mastra 에이전트와 기억",
+      "sha256": "16826d4be21cb93d364b4e269b00453c286705c644aab713ba0d77d2fe0c057a",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/libraries/nestjs-libraries/src/chat/load.tools.service.ts"
+    },
+    {
+      "id": "P09",
+      "project": "postiz",
+      "path": "libraries/nestjs-libraries/src/chat/start.mcp.ts",
+      "description": "MCP 인증과 서버",
+      "sha256": "f416fefee2513e83c3fb796345c3c26d24c7445656480acbf852719c9f97d302",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/libraries/nestjs-libraries/src/chat/start.mcp.ts"
+    },
+    {
+      "id": "P10",
+      "project": "postiz",
+      "path": "libraries/nestjs-libraries/src/chat/tools/integration.schedule.post.ts",
+      "description": "MCP 게시물 생성",
+      "sha256": "7febaf1e280d3737fa839547ae49ba009a633fa6763cb406cde10c155261374b",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/libraries/nestjs-libraries/src/chat/tools/integration.schedule.post.ts"
+    },
+    {
+      "id": "P11",
+      "project": "postiz",
+      "path": "libraries/nestjs-libraries/src/chat/tools/post.settings.tool.ts",
+      "description": "MCP 설정 수정 범위",
+      "sha256": "84ead5d852557e9167b3011c9659df6a6cc1c0aa9db036dd6c1afe692a3d275d",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/libraries/nestjs-libraries/src/chat/tools/post.settings.tool.ts"
+    },
+    {
+      "id": "P12",
+      "project": "postiz",
+      "path": "libraries/nestjs-libraries/src/agent/agent.graph.service.ts",
+      "description": "LangGraph 생성 파이프라인",
+      "sha256": "1da780dd8e7f996026eaad6812695a2236a076fce8d9c2400bac7b7ba20313ab",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/libraries/nestjs-libraries/src/agent/agent.graph.service.ts"
+    },
+    {
+      "id": "P13",
+      "project": "postiz",
+      "path": "apps/backend/src/api/routes/copilot.controller.ts",
+      "description": "Copilot HTTP와 키 누락 처리",
+      "sha256": "a8ebb8d413bd20854c6a5e3b772116b08c1f10736e2ac827c309f698d46b53db",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/apps/backend/src/api/routes/copilot.controller.ts"
+    },
+    {
+      "id": "P14",
+      "project": "postiz",
+      "path": "libraries/nestjs-libraries/src/integrations/social/social.integrations.interface.ts",
+      "description": "SNS 어댑터 계약",
+      "sha256": "b9f0041f34b6f1bc91d64ff0db893ff8ccd7648ae9900673fd5ca3ff31a12d15",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/libraries/nestjs-libraries/src/integrations/social/social.integrations.interface.ts"
+    },
+    {
+      "id": "P15",
+      "project": "postiz",
+      "path": "libraries/nestjs-libraries/src/integrations/integration.manager.ts",
+      "description": "등록된 SNS 어댑터",
+      "sha256": "fd014e35492b4186312cf7107eec2370c9dc80b9884983736e5831a3cebb659f",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/libraries/nestjs-libraries/src/integrations/integration.manager.ts"
+    },
+    {
+      "id": "P16",
+      "project": "postiz",
+      "path": "libraries/nestjs-libraries/src/database/prisma/integrations/integration.repository.ts",
+      "description": "채널 토큰 저장 경로",
+      "sha256": "2184062a50ddfbc9c2fd39865ed2c92b9eb03dbf7fd7bb978483bb307c3cf204",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/libraries/nestjs-libraries/src/database/prisma/integrations/integration.repository.ts"
+    },
+    {
+      "id": "P17",
+      "project": "postiz",
+      "path": "libraries/nestjs-libraries/src/database/prisma/prisma.service.ts",
+      "description": "Prisma 클라이언트",
+      "sha256": "ae3a387e6c1e93f7a0bae67262ed425949d5d379dab793d3ff6bdfe1cb375123",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/libraries/nestjs-libraries/src/database/prisma/prisma.service.ts"
+    },
+    {
+      "id": "P18",
+      "project": "postiz",
+      "path": "jest.config.ts",
+      "description": "테스트 설정",
+      "sha256": "2f84dea99da9a854ceceef9e3125fbd57b6d2d174d3c6562b53355f3f0affcaa",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/jest.config.ts"
+    },
+    {
+      "id": "P19",
+      "project": "postiz",
+      "path": ".github/workflows/build.yml",
+      "description": "빌드 CI",
+      "sha256": "7a91586272740e8e7f2bf9af7c24099822f563e70064276159547062000897c8",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/.github/workflows/build.yml"
+    },
+    {
+      "id": "P20",
+      "project": "postiz",
+      "path": "CLAUDE.md",
+      "description": "개발 규칙과 워크플로 변경 규칙",
+      "sha256": "217bfe6fcf1434a60950c455546cfe453c8aa17a626db2b9fc6d687c798c16d8",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/CLAUDE.md"
+    },
+    {
+      "id": "P21",
+      "project": "postiz",
+      "path": "LICENSE",
+      "description": "루트 라이선스",
+      "sha256": "d322fb1066693d8ed25495d11029f443aa793316852749e1389773c1946251b3",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/LICENSE"
+    },
+    {
+      "id": "P22",
+      "project": "postiz",
+      "path": "libraries/nestjs-libraries/src/integrations/social/threads.provider.ts",
+      "description": "Threads 어댑터",
+      "sha256": "8845235158c690cb3a557cad360ccfe5a8047f318294ba149a8ccfd76480d970",
+      "url": "https://github.com/gitroomhq/postiz-app/blob/a5affe62c74e39c1e7ac960d50d8418b807d532c/libraries/nestjs-libraries/src/integrations/social/threads.provider.ts"
+    },
+    {
+      "id": "T01",
+      "project": "trypost",
+      "path": "composer.json",
+      "description": "PHP 의존성 선언",
+      "sha256": "7534943b27effeeafc65b2b9736788d4f118694576dcc5861533996d8b31d02f",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/composer.json"
+    },
+    {
+      "id": "T02",
+      "project": "trypost",
+      "path": "composer.lock",
+      "description": "실제 잠긴 PHP 의존성",
+      "sha256": "e5595f39a0e3cc0058993b219d032b3bd62d502e4c99bb4d8871a294e5b766a1",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/composer.lock"
+    },
+    {
+      "id": "T03",
+      "project": "trypost",
+      "path": "package.json",
+      "description": "프런트엔드 의존성",
+      "sha256": "24f829e0ef13c1b57e4dae63072dc15e1cbf576a1ba40717f748eacdd48cf619",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/package.json"
+    },
+    {
+      "id": "T04",
+      "project": "trypost",
+      "path": "bootstrap/app.php",
+      "description": "Laravel HTTP 구성",
+      "sha256": "9049e7ea477bff9a4fd69b1ca0161d7449a95005a238f22eb3b0d0afe6550a01",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/bootstrap/app.php"
+    },
+    {
+      "id": "T05",
+      "project": "trypost",
+      "path": "app/Models/Post.php",
+      "description": "현재 게시물 모델",
+      "sha256": "0064e8a1c6d36efd3975e0b11d48f72fe4df6dd527828125c3f3af4d78b85da0",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Models/Post.php"
+    },
+    {
+      "id": "T06",
+      "project": "trypost",
+      "path": "app/Models/SocialAccount.php",
+      "description": "채널과 암호화 캐스트",
+      "sha256": "5cbdcde0c7064122a62f526cb1f505f58886ad813f7599d4eceab67669abbd3b",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Models/SocialAccount.php"
+    },
+    {
+      "id": "T07",
+      "project": "trypost",
+      "path": "app/Actions/Post/CreatePosts.php",
+      "description": "다중 목적지 생성과 승인 분기",
+      "sha256": "6e81e39cde67c88a9c4a020d9f00aca06a0a48dfa04d2267cfeb7e3e28031346",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Actions/Post/CreatePosts.php"
+    },
+    {
+      "id": "T08",
+      "project": "trypost",
+      "path": "app/Actions/Post/CreateChannelPost.php",
+      "description": "채널별 게시물 생성",
+      "sha256": "92d1727bfa50c93803971a7cc31696ce04a8cad4a0eee9dafad2487a48b6b3df",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Actions/Post/CreateChannelPost.php"
+    },
+    {
+      "id": "T09",
+      "project": "trypost",
+      "path": "app/Support/PostApproval.php",
+      "description": "서버 승인 규칙",
+      "sha256": "42429562668b5f76882039258af0d639ee640213ca71178961bec9eda4ba09bc",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Support/PostApproval.php"
+    },
+    {
+      "id": "T10",
+      "project": "trypost",
+      "path": "app/Policies/PostPolicy.php",
+      "description": "게시물 권한",
+      "sha256": "483a65196b9e8bd6dbb1a63359d98b5926ff0752393b9719caee4a5bff1cb26d",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Policies/PostPolicy.php"
+    },
+    {
+      "id": "T11",
+      "project": "trypost",
+      "path": "app/Http/Middleware/Api/LoadWorkspaceFromToken.php",
+      "description": "워크스페이스에 고정된 토큰",
+      "sha256": "ae51b16f69b43e10b069a85b0586c4fe65e6f105a157d36b7323e794935efbb8",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Http/Middleware/Api/LoadWorkspaceFromToken.php"
+    },
+    {
+      "id": "T12",
+      "project": "trypost",
+      "path": "app/Mcp/Servers/TryPostServer.php",
+      "description": "MCP 도구 등록",
+      "sha256": "45a0f96f14968e221af15a8464a6cbbb0433a5bd6344d530787c94bb5607378b",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Mcp/Servers/TryPostServer.php"
+    },
+    {
+      "id": "T13",
+      "project": "trypost",
+      "path": "app/Jobs/PublishPost.php",
+      "description": "발행 작업 시작",
+      "sha256": "369d6c05c6cd63ec340a4194e6f0f2cb089ce44984950024f3b458c4988cb34a",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Jobs/PublishPost.php"
+    },
+    {
+      "id": "T14",
+      "project": "trypost",
+      "path": "app/Jobs/PublishToSocialPlatform.php",
+      "description": "발행·재시도·오류 처리",
+      "sha256": "a0855f1b585b466c04788b8d84ce70f99d082c23085c1334cd41e4673b57479b",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Jobs/PublishToSocialPlatform.php"
+    },
+    {
+      "id": "T15",
+      "project": "trypost",
+      "path": "app/Support/Social/ThreadProgress.php",
+      "description": "스레드 부분 발행 추적",
+      "sha256": "6ff2d2b7952151952945eaa530525050795687f9e5f5f021bba55621f546611a",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Support/Social/ThreadProgress.php"
+    },
+    {
+      "id": "T16",
+      "project": "trypost",
+      "path": "app/Console/Commands/RecoverStuckPosts.php",
+      "description": "장시간 정체 작업 복구",
+      "sha256": "1999fb6d2e0a004ab3ffe286644cb23a5c46bf76b8eeb09b047a8ccfb1b38e25",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Console/Commands/RecoverStuckPosts.php"
+    },
+    {
+      "id": "T17",
+      "project": "trypost",
+      "path": "routes/console.php",
+      "description": "정기 실행 일정",
+      "sha256": "6fecac302085586f3e439b744add7c5e38d4b5767566fc2c3e741c091271fa16",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/routes/console.php"
+    },
+    {
+      "id": "T18",
+      "project": "trypost",
+      "path": "app/Actions/Analytics/ReadPublicationAnalytics.php",
+      "description": "저장된 분석 지표 조회",
+      "sha256": "461a9aeba20e48bdc3400c00785511b2144789cb98a26c5765141b0d7bf27e40",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Actions/Analytics/ReadPublicationAnalytics.php"
+    },
+    {
+      "id": "T19",
+      "project": "trypost",
+      "path": "app/Services/Analytics/Collectors/Publications/PublicationHistoryCollectorFactory.php",
+      "description": "분석 수집기",
+      "sha256": "eae570790d61ccf6836eddf47d76e2a15273d3086994326f194def330665b6d4",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Services/Analytics/Collectors/Publications/PublicationHistoryCollectorFactory.php"
+    },
+    {
+      "id": "T20",
+      "project": "trypost",
+      "path": "app/Enums/SocialAccount/Platform.php",
+      "description": "플랫폼과 분석 지원 구분",
+      "sha256": "01568a35c13d6311ce825e39a8671b350eadcaf0491bad9ce08d147309c217b2",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Enums/SocialAccount/Platform.php"
+    },
+    {
+      "id": "T21",
+      "project": "trypost",
+      "path": "app/Actions/Ai/AssistPostContent.php",
+      "description": "내장 글쓰기 AI 호출",
+      "sha256": "a4a114b08b8f8c91af1c5b7a8bf4752f6e1efe3753f0130d922257c6bd0f8d75",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Actions/Ai/AssistPostContent.php"
+    },
+    {
+      "id": "T22",
+      "project": "trypost",
+      "path": "config/ai.php",
+      "description": "AI 공급자 설정",
+      "sha256": "76a2b960fa8737306e93603c1af712c765b92e26583327a1a4bcf13248408bcd",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/config/ai.php"
+    },
+    {
+      "id": "T23",
+      "project": "trypost",
+      "path": "compose.prod.yaml",
+      "description": "프로덕션 컨테이너 구성",
+      "sha256": "76c344a119e6b28c6471b102e6ac0220b13f79af13e2735f1a139663a1a3ff3d",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/compose.prod.yaml"
+    },
+    {
+      "id": "T24",
+      "project": "trypost",
+      "path": "docker/supervisord.prod.conf",
+      "description": "컨테이너 내부 프로세스",
+      "sha256": "62f335f363bc5e7c86a0ac369ce19c7389403bd5e5b9794d48fe18707d72709b",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/docker/supervisord.prod.conf"
+    },
+    {
+      "id": "T25",
+      "project": "trypost",
+      "path": ".github/workflows/tests.yml",
+      "description": "테스트 CI",
+      "sha256": "fe839847e3cd65751b5bdf30ff031c61a3ef9200e493f1c52e185068aeb2b245",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/.github/workflows/tests.yml"
+    },
+    {
+      "id": "T26",
+      "project": "trypost",
+      "path": "DEPLOYMENT.md",
+      "description": "게시물 모델 변경 배포 절차",
+      "sha256": "f1ccdd4025f5083849309de3bf9274950eb83950622988177d6b39b091930849",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/DEPLOYMENT.md"
+    },
+    {
+      "id": "T27",
+      "project": "trypost",
+      "path": "ANALYTIC.md",
+      "description": "과거 분석 기능 목록과 주의",
+      "sha256": "63b80f425f9533c63b04fb7964e9dffd1b439e6c3af2961602cbd9a0f0c0d1d9",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/ANALYTIC.md"
+    },
+    {
+      "id": "T28",
+      "project": "trypost",
+      "path": "docs/superpowers/specs/2026-09-23-workspace-follower-analytics-design.md",
+      "description": "분석 데이터 설계",
+      "sha256": "e9bfcbc2a6a04ca80658c9384ab435d50177b3b9160204e6e2ec859c5256c70c",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/docs/superpowers/specs/2026-09-23-workspace-follower-analytics-design.md"
+    },
+    {
+      "id": "T29",
+      "project": "trypost",
+      "path": "docs/superpowers/specs/2026-09-24-independent-social-posts-design.md",
+      "description": "채널별 독립 게시물 설계",
+      "sha256": "afbfee246ac4c603500e13c4cab9d849f01d18c7104ef6c8be60e9b4c7f97533",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/docs/superpowers/specs/2026-09-24-independent-social-posts-design.md"
+    },
+    {
+      "id": "T30",
+      "project": "trypost",
+      "path": "tests/Feature/Posts/PostApprovalGateTest.php",
+      "description": "승인 규칙 테스트",
+      "sha256": "8ec26115dd160ec1ba9a4fa2f3d37cd9c45a38c8ff7c2fc8d6e8d68da834c4d4",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/tests/Feature/Posts/PostApprovalGateTest.php"
+    },
+    {
+      "id": "T31",
+      "project": "trypost",
+      "path": "tests/Feature/Api/LoadWorkspaceFromTokenTest.php",
+      "description": "토큰 경계 테스트",
+      "sha256": "43e8d7f983ff752a4e4ff13f0a423115b812c025c58f222946dfbe0ba6f58d8b",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/tests/Feature/Api/LoadWorkspaceFromTokenTest.php"
+    },
+    {
+      "id": "T32",
+      "project": "trypost",
+      "path": "tests/Feature/Mcp/PostApprovalToolTest.php",
+      "description": "MCP 승인 테스트",
+      "sha256": "85a534f638b80a7f55bc44c5c224f76623b76d988d5b20c3e216b29926d8bbdc",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/tests/Feature/Mcp/PostApprovalToolTest.php"
+    },
+    {
+      "id": "T33",
+      "project": "trypost",
+      "path": "LICENSE.md",
+      "description": "루트 라이선스",
+      "sha256": "d8a6cc31abc16b6748c7a21f21611f5a1ec33f67d22ca23d7da1c19b95496bee",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/LICENSE.md"
+    },
+    {
+      "id": "T34",
+      "project": "trypost",
+      "path": "app/Enums/Post/Status.php",
+      "description": "편집·승인·예약 상태",
+      "sha256": "029a8ea17a97a4084f11ec54d2f1a4e07c4614b54ab3204d0f53fbd82cb3e603",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Enums/Post/Status.php"
+    },
+    {
+      "id": "T35",
+      "project": "trypost",
+      "path": "app/Enums/Post/PublishStatus.php",
+      "description": "SNS 전송 상태",
+      "sha256": "dd339d08233e334bba9f9963a5332153f43b465d41af7fea867b05442e631368",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Enums/Post/PublishStatus.php"
+    },
+    {
+      "id": "T36",
+      "project": "trypost",
+      "path": "app/Services/Social/ThreadsPublisher.php",
+      "description": "Threads 발행 구현",
+      "sha256": "facbf924ac10928f8e403e42c4bae3070b64c0cea435d704fe75c6bfdd77ee98",
+      "url": "https://github.com/trypostit/trypost/blob/b13cca4d834bc793ef895dba40f29ed050ec820d/app/Services/Social/ThreadsPublisher.php"
+    }
+  ],
+  "unverified": [
+    "full upstream test suites",
+    "actual SNS posting and token lifecycle",
+    "LLM output quality and provider costs",
+    "load and failure injection",
+    "comprehensive security and dependency license audit"
+  ]
+}

@@ -1,0 +1,13 @@
+title = "Mellumo public source scanning"
+
+[extend]
+useDefault = true
+
+# Upstream Lingo translation checksums resemble API tokens. Allow only
+# checksum-shaped mapping lines in this exact lockfile, not arbitrary keys.
+[[allowlists]]
+description = "Lingo translation checksum entries, not credentials"
+condition = "AND"
+paths = ['(^|/)i18n\.lock$']
+regexTarget = "line"
+regexes = ['^\s+[a-zA-Z0-9_]+:\s+[a-f0-9]{32}\s*$']

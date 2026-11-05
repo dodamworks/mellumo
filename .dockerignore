@@ -15,9 +15,23 @@ dist
 .devcontainer
 **/.git
 **/*.md
-**/LICENSE
 **/npm-debug.log
 **/*.vscode
 .git
 .github
 reports
+# Mellumo private operational data
+evaluation
+.local
+.env
+.env.*
+!.env.example
+!.env.mellumo.example
+**/*.pem
+**/*.key
+**/*.p12
+**/*.p8
+uploads
+backups
+!LICENSE
+!NOTICE

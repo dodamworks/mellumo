@@ -1,0 +1,17 @@
+Mellumo — independent derivative of Postiz
+
+Upstream: https://github.com/gitroomhq/postiz-app
+Starting release: v2.25.3
+Starting commit: a5affe62c74e39c1e7ac960d50d8418b807d532c
+Upstream license: GNU Affero General Public License, version 3 (AGPL-3.0)
+
+The original authors retain copyright in their respective contributions.
+Existing copyright and attribution notices are preserved. Mellumo changes
+are Copyright (c) 2026 Dodam and contributors, under the same license.
+This notice does not replace or restrict the terms of LICENSE.
+
+Modified beginning 2026-11-05: Mellumo repository identity, documentation,
+community policies, local source-build configuration and GitHub automation.
+Application source under apps/ and libraries/ is initially unchanged.
+No Postiz endorsement, affiliation, trademark right or external API access
+is claimed. Third-party components retain their own notices and terms.

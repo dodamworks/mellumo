@@ -1,7 +1,7 @@
 {
-  "name": "gitroom",
-  "version": "1.0.0",
-  "description": "",
+  "name": "mellumo",
+  "version": "0.1.0-dev.0",
+  "description": "Open-source agent-driven social media automation, based on Postiz.",
   "main": "index.js",
   "license": "AGPL-3.0",
   "keywords": [],
@@ -344,5 +344,14 @@
     "onlyBuiltDependencies": [
       "bcrypt"
     ]
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dodamworks/mellumo.git"
+  },
+  "homepage": "https://github.com/dodamworks/mellumo",
+  "bugs": {
+    "url": "https://github.com/dodamworks/mellumo/issues"
   }
 }

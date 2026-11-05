@@ -1,14 +1,5 @@
-# Disable the default option to open a blank issue
-blank_issues_enabled: true 
-
-# Define your custom links
+blank_issues_enabled: false
 contact_links:
-  # The first link definition
-  - name: 🙏 Installation Issue
-    url: https://discord.postiz.com
-    about: If you have an installation / configuration issue.
-
-  # You can add more links if needed
-  - name: Security Issue
-    url: https://github.com/gitroomhq/postiz-app/security/advisories/new
-    about: Please submit security Issues our GitHub Security Advisories.
+  - name: Private security report
+    url: https://github.com/dodamworks/mellumo/blob/main/SECURITY.md
+    about: Use the private reporting route; do not disclose vulnerabilities in public issues.

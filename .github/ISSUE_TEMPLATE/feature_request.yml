@@ -1,0 +1,13 @@
+name: Task or feature proposal
+description: Describe a task Mellumo should complete.
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: User objective and completion condition
+    validations:
+      required: true
+  - type: textarea
+    id: reuse
+    attributes:
+      label: Existing capability and missing connection

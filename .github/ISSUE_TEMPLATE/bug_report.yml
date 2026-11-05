@@ -1,0 +1,21 @@
+name: Bug report
+description: Report a reproducible Mellumo issue.
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Commit or version
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps, expected result and observed result
+      description: Remove credentials and private data from logs.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and relevant configuration
+      description: Do not paste .env files or tokens.
