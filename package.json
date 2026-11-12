@@ -166,7 +166,7 @@
     "emoji-picker-react": "^4.12.0",
     "evp_bytestokey": "^1.0.3",
     "facebook-nodejs-business-sdk": "^21.0.5",
-    "fast-xml-parser": "^5.11.0",
+    "fast-xml-parser": "^5.12.0",
     "file-type": "^22.0.2",
     "google-auth-library": "^9.11.0",
     "googleapis": "^137.1.0",
